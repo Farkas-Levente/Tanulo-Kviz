@@ -94,5 +94,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="dolgok\fizika.txt" />
+    <Resource Include="dolgok\informatika.txt" />
+    <Resource Include="dolgok\magyar.txt" />
+    <Resource Include="dolgok\matematika.txt" />
+    <Resource Include="dolgok\physics.txt" />
+    <Resource Include="dolgok\quiz_kep.png" />
+    <Resource Include="dolgok\torike.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
