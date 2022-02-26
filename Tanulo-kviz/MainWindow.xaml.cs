@@ -35,6 +35,49 @@ namespace Tanulo_kviz
         public MainWindow()
         {
             InitializeComponent();
+
+            oldalValtoGombok.Add(oldal_1);
+            oldalValtoGombok.Add(oldal_2);
+            oldalValtoGombok.Add(oldal_3);
+            oldalValtoGombok.Add(oldal_4);
+            oldalValtoGombok.Add(oldal_5);
+            oldalValtoGombok.Add(oldal_6);
+            oldalValtoGombok.Add(oldal_7);
+            oldalValtoGombok.Add(oldal_8);
+            oldalValtoGombok.Add(oldal_9);
+            oldalValtoGombok.Add(oldal_10);
+
+            buttons.Add(valasz1);
+            buttons.Add(valasz2);
+            buttons.Add(valasz3);
+            buttons.Add(valasz4);
+
+            temakorBox.IsEnabled = false;
+
+
+            Tantargy fizika = new Tantargy(@"C:\Users\Flevi\Documents\GitHub\Tanulo-Kviz\Tanulo-kviz\dolgok\fizika.txt");
+            tantargyNyilvantarto.Add(fizika.nev, fizika);
+            targyBox.Items.Add(fizika.nev);
+
+            //Tantargy magyar = new Tantargy("magyar.txt");
+            //tantargyNyilvantarto.Add(magyar.nev, magyar);
+            //targyBox.Items.Add(magyar.nev);
+
+            //Tantargy informatika = new Tantargy("informatika.txt");
+            //tantargyNyilvantarto.Add(informatika.nev, informatika);
+            //targyBox.Items.Add(informatika.nev);
+
+            //Tantargy matematika = new Tantargy("matematika.txt");
+            //tantargyNyilvantarto.Add(matematika.nev, matematika);
+            //targyBox.Items.Add(matematika.nev);
+
+            //Tantargy physics = new Tantargy("physics.txt");
+            //tantargyNyilvantarto.Add(physics.nev, physics);
+            //targyBox.Items.Add(physics.nev);
+
+            //Tantargy tori = new Tantargy("torike.txt");
+            //tantargyNyilvantarto.Add(tori.nev, tori);
+            //targyBox.Items.Add(tori.nev);
         }
         public class Tantargy
         {
