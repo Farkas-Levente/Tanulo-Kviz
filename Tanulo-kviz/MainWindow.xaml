@@ -34,16 +34,16 @@
             <Label Name="temakor" Content="Téma" Margin="157,68,191,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="36" RenderTransformOrigin="0.5,0.5" FontStyle="Italic"/>
             <Label Name="kerdes" Content="Kérdés" Margin="-20,165,20,0" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Center" FontSize="24" Height="84" FontWeight="Bold"/>
             <Viewbox Height="36" Margin="-20,214,20,0" VerticalAlignment="Top">
-                <RadioButton  HorizontalContentAlignment="Center" GroupName="Valasz" x:Name="valasz1" Content="Válasz 1" Width="746" Checked="Valasz1_Checked"/>
+                <RadioButton  HorizontalContentAlignment="Left" GroupName="Valasz" x:Name="valasz1" Content="Válasz 1" Width="746" Checked="Valasz1_Checked"/>
             </Viewbox>
             <Viewbox Height="36" Margin="-20,254,20,0" VerticalAlignment="Top">
-                <RadioButton  HorizontalContentAlignment="Center" GroupName="Valasz" x:Name="valasz2" Content="Válasz 2" Width="746" Checked="Valasz2_Checked"></RadioButton>
+                <RadioButton  HorizontalContentAlignment="Left" GroupName="Valasz" x:Name="valasz2" Content="Válasz 2" Width="746" Checked="Valasz2_Checked"></RadioButton>
             </Viewbox>
             <Viewbox Height="36" Margin="-20,295,20,0" VerticalAlignment="Top">
-                <RadioButton  HorizontalContentAlignment="Center" GroupName="Valasz" x:Name="valasz3" Content="Válasz 3" Width="745" Checked="Valasz3_Checked"></RadioButton>
+                <RadioButton  HorizontalContentAlignment="Left" GroupName="Valasz" x:Name="valasz3" Content="Válasz 3" Width="745" Checked="Valasz3_Checked"></RadioButton>
             </Viewbox>
             <Viewbox Height="36" Margin="-20,336,20,0" VerticalAlignment="Top">
-                <RadioButton  HorizontalContentAlignment="Center" GroupName="Valasz" x:Name="valasz4" Content="Válasz 4" Width="745" Checked="Valasz4_Checked"></RadioButton>
+                <RadioButton  HorizontalContentAlignment="Left" GroupName="Valasz" x:Name="valasz4" Content="Válasz 4" Width="745" Checked="Valasz4_Checked"></RadioButton>
             </Viewbox>
 
             <Label x:Name="oladalJelzo" Content="1/10" HorizontalContentAlignment="Center" Margin="1,417,51,0" VerticalAlignment="Top" FontSize="24" Height="48" RenderTransformOrigin="0.517,0.312"/>
