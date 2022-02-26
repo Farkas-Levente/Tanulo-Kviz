@@ -22,7 +22,7 @@ namespace Tanulo_kviz
     {
         public MainWindow()
         {
-            InitializeComponent();
+            //InitializeComponent();
         }
     }
 }
