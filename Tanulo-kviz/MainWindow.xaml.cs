@@ -305,7 +305,7 @@ namespace Tanulo_kviz
             {
                 button.Background = Brushes.White;
             }
-            oldalValtoGombok[oldalIndex].Background = Brushes.Aqua;
+            
 
             if (kiertekelt)
             {
@@ -322,7 +322,23 @@ namespace Tanulo_kviz
                     button.IsEnabled = false;
 
                 }
+                for (int i = 0; i < betoltottKerdesek.Count; i++)
+                {
+                    if (betoltottKerdesek[i].valasztott == betoltottKerdesek[i].helyesValasz)
+                    {
+                        
+                        oldalValtoGombok[i].Foreground = Brushes.Green;
+                        oldalValtoGombok[i].Background = Brushes.Green;
+                    }
+                    else
+                    {
+                        oldalValtoGombok[i].Foreground = Brushes.Red;
+                        oldalValtoGombok[i].Background = Brushes.Red;
+                    }
+
+                }
             }
+            oldalValtoGombok[oldalIndex].Background = Brushes.Aqua;
 
         }
 
@@ -472,12 +488,20 @@ namespace Tanulo_kviz
             }
 
             int helyesValaszok = 0;
-            foreach (Kerdes kerdes in betoltottKerdesek)
+            for (int i = 0; i < betoltottKerdesek.Count; i++)
             {
-                if (kerdes.valasztott == kerdes.helyesValasz)
+                if (betoltottKerdesek[i].valasztott == betoltottKerdesek[i].helyesValasz)
                 {
                     helyesValaszok++;
+                    oldalValtoGombok[i].Foreground = Brushes.Green;
+                    oldalValtoGombok[i].Background = Brushes.Green;
                 }
+                else
+                {
+                    oldalValtoGombok[i].Foreground = Brushes.Red;
+                    oldalValtoGombok[i].Background = Brushes.Red;
+                }
+
             }
 
             MessageBox.Show($"{helyesValaszok}/10 pontod lett.");
